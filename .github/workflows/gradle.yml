@@ -24,7 +24,7 @@ jobs:
         run: ./gradlew deploy
 
       - name: Upload built jar file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           name: ${{ github.event.repository.name }}
           path: build/libs/${{ github.event.repository.name }}.jar
